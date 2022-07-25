@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #btn {
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: lightskyblue;
+            color: whitesmoke;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is my Heading</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur vel amet alias eum natus quae quis laboriosam aut, magnam in unde rerum dolores! Nulla ut id numquam fuga quam quod dolores ipsam voluptatem asperiores pariatur, delectus, facilis cum, impedit magnam consequuntur iste veniam natus molestias. Ipsum numquam sunt magni! Sit, quidem eos? Sint beatae excepturi distinctio enim quam sapiente a aliquid praesentium incidunt. Voluptates nam facilis autem recusandae sit veritatis, soluta aut inventore sunt quibusdam. Distinctio pariatur maxime maiores odio atque, alias itaque voluptate praesentium soluta. Fuga molestiae reiciendis iusto itaque illum provident! Eos consequatur laboriosam ea magni iure nisi nobis, architecto quaerat amet fugiat non minima aut laudantium, asperiores aliquid velit consequuntur nam maiores odio ullam cumque? Cum quae libero tempora repellendus perferendis eveniet aperiam facilis culpa non, est ipsa adipisci, dolorem ad, temporibus distinctio nulla eius! Similique non corporis laudantium molestias animi distinctio impedit quaerat quis suscipit ea tenetur nam ex voluptate odit, a ab necessitatibus eaque numquam deserunt. Voluptatem tempora nam numquam magni molestiae, sapiente id quia enim, eum praesentium deserunt! Tempore qui reiciendis magnam dignissimos, quod, fuga voluptas ipsam animi placeat ducimus deserunt aliquam? Quisquam sapiente pariatur ullam provident voluptatem itaque unde ipsam ducimus reprehenderit?</p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+    <script>
+        function togglehide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != "none") {
+                para.style.display = "none" 
+            } else {
+                para.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Math Object</title>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        let m = Math;
+        console.log(m)
+
+        // Printing the constants from Math Object
+        console.log("The value of Math.E is ", Math.E)
+        console.log("The value of Math.PI is ", Math.PI)
+        console.log("The value of Math.LN2 is ", Math.LN2)
+        console.log("The value of Math.SQRT1_2 is ", Math.SQRT1_2)
+        console.log("The value of Math.LOG2E is ", Math.LOG2E)
+
+        // Printing the Functions from Math Object
+        let a = 34.6826
+        let b = 89
+
+        console.log('The value of a and b: ', a,b)
+        console.log('The value of a and b: ', Math.round(a),Math.round(b))
+
+        console.log('3 raised to power of 2: ', Math.pow(3,2))
+
+        console.log('The sqaure root of 36: ', Math.sqrt(36))
+        console.log('The sqaure root of 50: ', Math.sqrt(50))
+
+        // Ceil and floor
+
+        console.log('5.8 rounded up to the nearest value is: ', Math.ceil(5.8))
+        console.log('5.8 rounded down to the nearest value is: ', Math.floor(5.8))
+
+        // abs function
+
+        console.log('The absolute value of 5.66: ', Math.abs(5.66))
+        console.log('The absolute value of -(5.66): ', Math.abs(-5.66))
+
+        // Trigonmetric functions
+
+        console.log('The value of sin(pi):', Math.sin(Math.PI/2))
+        console.log('The value of cos(pi):', Math.cos(Math.PI/2))
+        console.log('The value of tan(pi):', Math.tan(Math.PI/2))
+        
+        // Min and Max Functions    
+        console.log('Min Value', Math.min(4,5,6))
+        console.log('Max Value', Math.max(4,5,6))
+
+        // Random Numbers
+        let r = Math.random();
+        console.log('Random Number: ', r*100)
+
+        let a1 = 1
+        let b1 = 100
+
+        let a2 = 50
+        let b2 = 60
+
+        let r1_100 = a1 + (b1-a1) * Math.random()
+        let r50_60 = a2 + (b2-a2) * Math.random()
+
+        50 + (60 - 50) * Math*random() 
+
+        console.log('Random Number: ', Math.round(r1_100))
+        console.log('Random Number: ', Math.round(r50_60))
+
+    </script>
+</body>
+
+</html>

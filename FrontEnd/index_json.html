@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JSON IS USED FOR DATA Transportation
+        transport a object in a string format  
+    -->
+
+    <script>
+        let jsonObj = {
+            name: "Harry",
+            channel: "CWH",
+            friend: "Rohan Das",
+        }
+        // console.log(jsonObj)
+        
+        // convert the objects as a string
+        let myJsonStr = JSON.stringify(jsonObj)
+        console.log(myJsonStr)
+
+        myJsonStr = myJsonStr.replace('Harry', 'Aman')
+        console.log(myJsonStr)
+
+
+        // Convert it back to a object
+        newJsonObj = JSON.parse(myJsonStr) 
+        console.log(newJsonObj)
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            /* border: 4px solid red; */
+            width: 544px;
+            padding: 23px 12px;
+            margin: 23px 12px; 
+            background-color: burlywood;
+            /* box-shadow: 10px 13px green;
+            box-shadow: -10px -13px green;
+            box-shadow: 7px 5px 10px green;
+            box-shadow: -7px -5px 10px green;
+            box-shadow: inset 3px 5px green;
+            
+            box-shadow: 6px 8px green, 10px 10px red; */
+            box-sizing: border-box;
+        }   
+
+        .card h2 {
+            text-shadow: 4px 2px whitesmoke;
+            text-shadow: 4px 2px 6px whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card-1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe soluta accusantium asperiores recusandae ducimus dignissimos molestiae nam. Harum officiis perferendis, similique repellendus ab sint eligendi, consequatur necessitatibus eius repudiandae distinctio deserunt a, optio laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card-2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe soluta accusantium asperiores recusandae ducimus dignissimos molestiae nam. Harum officiis perferendis, similique repellendus ab sint eligendi, consequatur necessitatibus eius repudiandae distinctio deserunt a, optio laborum!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card-3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe soluta accusantium asperiores recusandae ducimus dignissimos molestiae nam. Harum officiis perferendis, similique repellendus ab sint eligendi, consequatur necessitatibus eius repudiandae distinctio deserunt a, optio laborum!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut and SetTimeInterval</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+
+    <div class="container">
+        <p>Current time is <span id="time"></span></p>
+    </div>
+    <script>
+        function greet(name) {
+            console.log('Hello! Good Morning,' + " " + name)
+        }
+        
+        function displayTime() {
+            d = new Date();
+            console.log(d)
+            document.getElementById('time').innerHTML = d
+        }
+        
+        // timeOut = setTimeout(greet, 2000, "Aman");
+
+        // clearTimeout(timeOut)
+
+        // setInterval(greet, 1000, "Aman");
+
+        intervalId = setInterval(displayTime, 1000);
+
+        clearInterval(intervalId)
+
+        let date = new Date();
+
+        setInterval(() => {
+            d = new Date();
+            // console.log(date);
+
+            // document.getElementById('time').innerHTML = d
+        }, 1000);
+
+
+
+        
+    </script>
+</body>
+</html>

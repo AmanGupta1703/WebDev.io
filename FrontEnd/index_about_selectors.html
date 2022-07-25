@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* div p {
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+
+        /* If p is contained by any li which conatined by any div */
+        /* div li p {
+            color: white;
+            background-color: lightcoral;
+        } */
+
+        /* if p is right inside the div and this CSS will be applied */
+        /* div > p {
+            color: black;
+            background-color: lightgreen;
+        } */
+
+        /* if p is right after the div tag or p is the nect sibling of the div tag */
+        div + p {
+            color: white;
+            background-color: rgb(250, 147, 147);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>More on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is a para inside the li tag</p>
+                </li>
+                <li>This will not get affected</li>
+            </ul>
+            <p>This is a para tag in div class row and the direct descendant of div class row</p>
+        </div>
+        <p>This is para tag inside the div class container and the direct descendant of div class container</p>
+    </div>
+    <p>This is para tag outside both the div tags</p>
+</body>
+
+</html>

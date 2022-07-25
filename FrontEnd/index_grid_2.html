@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+    
+    /* Lecture - 2 */
+    .grid {
+            display: grid;
+            grid-template-rows: 2fr 2fr 2fr;
+            grid-auto-rows: 2fr;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            grid-gap: 1rem;
+            margin-bottom: 10px;
+        }
+
+    .item {
+        background-color: rgb(249, 169, 169);
+        border: 2px solid black;
+    }
+
+    /* Lecture - 3 Start */
+
+    body {
+        background-color: darkgray;
+    }
+
+    .container {
+        border: 2px dashed white;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: (4, 1fr);
+        grid-row-gap: 1rem; 
+        grid-gap: 1rem;
+    }
+
+    .box {
+        border: 2px solid black;
+        background-color: rgb(149, 244, 244);
+        padding: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 4px;
+    }
+
+    .box:first-child {
+        /* grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3; */
+        border: 4px solid black;
+        border-radius: 10px;
+        margin: 12px 6px;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 5;
+        background: url('https://i.pinimg.com/originals/bc/0e/09/bc0e09b8128012312eb392c59f36b9ef.jpg') center center/cover;
+    }
+    
+    </style>
+</head>
+<body>
+    <!-- Lecture - 2 -->
+    <div class="grid">
+        <div class="item">This is box-1</div>
+        <div class="item">This is box-2</div>
+        <div class="item">This is box-3</div>
+        <div class="item">This is box-4</div>
+        <div class="item">This is box-5</div>
+        <div class="item">This is box-6</div>
+        <div class="item">This is box-7</div>
+        <div class="item">This is box-8</div>
+        <div class="item">This is box-9</div>
+        <div class="item">This is box-10</div>
+        <div class="item">This is box-11</div>
+        <div class="item">This is box-12</div>
+    </div>
+
+    <!-- Lecture - 3 -->
+    <div class="container">
+        <div class="box">This is a box-1</div>
+        <div class="box">This is a box-2</div>
+        <div class="box">This is a box-3</div>
+        <div class="box">This is a box-4</div>
+        <div class="box">This is a box-5</div>
+        <div class="box">This is a box-6</div>
+        <div class="box">This is a box-7</div>
+        <div class="box">This is a box-8</div>
+        <div class="box">This is a Box-9</div>
+        <div class="box">This is a Box-10</div>
+        <div class="box">This is a Box-11</div>
+        <div class="box">This is a Box-12</div>
+        <div class="box">This is a Box-13</div>
+        <div class="box">This is a Box-14</div>
+        <div class="box">This is a Box-15</div>
+        <div class="box">This is a Box-16</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <!-- <div class="container">
+        <h1>This is a heading</h1>
+
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ea fuga laudantium tenetur odit inventore. Officia soluta quidem quibusdam rem delectus voluptates consequatur?</p>
+        </div>
+    </div> -->
+
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        another container
+    </div>
+
+
+
+    <script>
+  /*
+  // Write Your Js here
+        // console.log('Hello, World!')
+        
+        // Variables
+        // var varName = value;
+        // var a = 78;
+        // var b = "Aman"; 
+        // var c = 34.55;
+        // console.log(a, b, c);   
+
+        // var string = "this"
+        // var name = "Aman"
+        // var message = "is a good boy"
+
+        // console.log(string + ', ' +  name + ' ' + message)
+        // var len = name.length;
+        // console.log(`The length of string name is ${len}`)
+
+        // String functions
+
+        var str = "This is a string";
+
+        // First occurence of the subString
+        var position = str.indexOf('is')
+        // console.log(position)
+
+        // Last occurence of the subString
+        position = str.lastIndexOf('is')
+        // console.log(position)
+
+        // SCoping and Conditional Statements
+        // Use let instead of var (since let has a block level scope)
+        */
+        /*
+        let age = 18;
+        if (age > 18) {
+            console.log('You can drink water');
+        } else if (age == 2) {
+            console.log('Age is 2');
+        } else if (age == 5) {
+            console.log('Age is 5');
+        } else {
+            console.log('You can drink cold drink');
+        }
+        */
+
+        // Switch Case Statements
+        /*
+        const day = "Tuesday"
+        
+        switch (day) {
+            case "Monday":
+                console.log('Today is Monday')
+                break;
+            case "Tuesday":
+                console.log('Today is Tuesday')
+                break;
+            case "Wednesday":
+                console.log('Today is Wednesday')
+                break;
+            case "Thursday":
+                console.log('Today is Thursday')
+                break;
+            case "Friday":
+                console.log('Today is Friday')
+                break;
+            case "Saturday":
+                console.log('Today is Saturday')
+                break;
+            case "Sunday":
+                console.log('Today is Sunday')
+                break;
+        
+            default:
+                console.log('Invalid Day')
+                break;
+        }
+
+        */
+
+        // Arrays and Objects 
+        // Primitive datatypes -> numbers string boolean null undefined
+
+        // Objects store key-value pairs
+
+        /*
+        let employee  = {
+            name: "Harry",
+            salary: 10,
+            channel: 'CodeWithHarry',
+            channel2: 'ProgrammingWithHarry'
+        };
+        console.log(employee)
+        */
+
+        // let names = [1, 2, 4, "Aman"];
+        // let names = new Array(23, "Aman");
+
+        /*
+        let names = new Array(23);
+
+        console.log(names.length)
+
+        names = names.sort();
+
+        names.push('Hello')
+
+        console.log(names)
+        */
+
+        // Functions
+        /*
+        function compare_numbers(a,b,c) {
+            if (a > b) {
+                if (a > c) {
+                return a + ' is greater than '+ b + ' or/both ' + c;
+                } else {
+                    return a + ' is less than '+ b + ' or/both ' + c;
+                }
+            }
+            
+            else if (b > a) {
+                if (b > c) {
+                    return b + ' is greater than '+ a + ' or/both ' + c;
+                } else {
+                    return b + ' is less than '+ a + ' or/both ' + c;
+                }
+            }
+
+            else if (c > a) {
+                if (c > b) {
+                    return c + ' is greater than '+ a + ' or/both ' + b;
+                } else {
+                    return c + ' is less than '+ a + ' or/both ' + b;
+                }
+            }
+            
+        }
+
+        let a = 10
+        let b = 12
+        let c = 8
+        let returnVal = compare_numbers(a, b, c)
+
+        console.log(returnVal)
+
+        */
+
+        // Interaction using alert prompt confirm
+
+        // Alert in in-browser js ->does not return anything  
+        // alert('Today is a good day')
+
+
+        // Prompt 
+        //let name = prompt('What is your name?', "Guest")
+        //console.log('Player name: '+ name)
+
+
+        // Confirm
+        /*
+        let deletePost = confirm('Do you really want to delete the post?')
+
+        if (deletePost) {
+            console.log('Your post has been deleted successfully')
+        } else {
+            console.log('Your post has not been deleted')
+        }
+        */
+
+        /*
+        let age = prompt('Enter your age', "18");
+
+        if (age > 18) {
+            alert('You can join the club')
+        } else {
+            alert('You cannot join the club')
+        }
+        */
+
+        // Loops
+
+        let friends = ['aman', 'kunal', 'ram', 'shyam']
+
+        /*for (let index = 0; index < friends.length; index++) {
+            console.log(friends[index]);
+            
+        }*/
+
+        /*
+        friends.forEach(function (element) {
+            console.log(element)
+        });
+        */
+
+        /*for (element of friends) {
+            console.log(element)
+        }*/
+
+        // Use for in loop to iterate over objects
+
+        /*
+        let employee = {
+            name: 'Aman',
+            salary: 2,
+            channel: "CwA"
+        };
+
+        for (key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`)
+        }
+        */
+
+        // While loop
+    /*
+        let i = 0 
+
+        while (i < 4) {
+            console.log(`${i} is than 4`)
+            i++;
+        }
+        */
+
+
+        // Manipulating DOM
+
+        let main = document.getElementById('main')
+        // console.log(main)
+
+        let nav = document.getElementById('nav')
+        // console.log(nav)
+
+        let containers = document.getElementsByClassName('container')
+        // console.log(containers)
+
+
+        // To select CSS selectors
+        // return the first element with class container
+        let sel = document.querySelector('.container')
+        // console.log(sel)
+        
+        sel = document.querySelector('#nav')
+        // console.log(sel)
+
+
+        // Events
+        
+    </script>
+</body>
+</html>
